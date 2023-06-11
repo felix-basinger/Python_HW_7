@@ -7,18 +7,18 @@
 # напишите “Парам пам-пам”, если с ритмом все в порядке и “Пам парам”, если с ритмом все не
 # в порядке
 
-def rhymes(rhyme):
-    vow = 'уеаэяию'
+def my_rhythm(some_rhythm):
+    vow = 'уеаэяиюaeuyo'
     count = 0
-    for i in rhyme:
+    for i in some_rhythm:
         for j in vow:
             if i == j:
                 count += 1
     return count
 
 
-rhythm = input("Enter your rhythm: ").split()
-res_list = list(map(rhymes, rhythm))
+rhythm = input("Enter your rhythm: ").lower().split()
+res_list = list(map(my_rhythm, rhythm))
 if len(set(res_list)) == 1:
     print("Парам пам-пам")
 else:
