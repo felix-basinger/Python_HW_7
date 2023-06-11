@@ -8,7 +8,7 @@
 # в порядке
 
 def my_rhythm(some_rhythm):
-    vow = 'уеаэяиюaeuyo'
+    vow = 'уеаэыёяиюaeuyo'
     count = 0
     for i in some_rhythm:
         for j in vow:
